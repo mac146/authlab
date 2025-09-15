@@ -90,4 +90,8 @@ try{
 }
 })
 
+userRouter.get("/", (req, res) => {
+  res.json({ message: "User routes are live!" });
+});
+
 module.exports = { userRouter };
